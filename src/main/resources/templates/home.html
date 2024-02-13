@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header">
+    <title>Hello</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div class="container">
+    <div th:replace="fragments/bodyHeader :: bodyHeader" />
+    <div class="jumbotron">
+        <h1>WellCome!</h1>
+        <p class="lead">Personal Information</p>
+        <p>
+            <a class="btn btn-lg btn-secondary" href="/member/information">Personal Data</a>
+            <a class="btn btn-lg btn-secondary" href="/member/target">Goal</a>
+        </p>
+        <p class="lead">Learning Contents</p>
+        <p>
+            <a class="btn btn-lg btn-dark" href="/learning/skill">Skills</a>
+            <a class="btn btn-lg btn-dark" href="/learning/algorithm">Algorithm</a>
+            <a class="btn btn-lg btn-dark" href="/learning/lectures">Finish Lecture</a>
+            <a class="btn btn-lg btn-dark" href="/learning/PJ">Project</a>
+
+
+        </p>
+        <p class="lead">My Web</p>
+        <p>
+            <a class="btn btn-lg btn-info" href="https://blog.naver.com/qto1">Blog</a>
+            <a class="btn btn-lg btn-info" href="https://github.com/iiiiiaiii">gitHub</a>
+        </p>
+    </div>
+    <div th:replace="fragments/footer :: footer" />
+</div> <!-- /container -->
+</body>
+</html>
